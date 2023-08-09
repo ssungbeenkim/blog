@@ -8,7 +8,8 @@ export default function HomePage() {
       <Hero />
       {/* @ts-expect-error Async Server Component */}
       <FeaturedPosts />
-      {/* <CarouselPosts /> */}
+      {/* @ts-expect-error Async Server Component */}
+      <CarouselPosts />
     </>
   );
 }

@@ -694,6 +694,7 @@ __metadata:
     prettier-plugin-tailwindcss: 0.2.8
     react: 18.2.0
     react-dom: 18.2.0
+    react-multi-carousel: ^2.8.4
     tailwindcss: ^3.2.7
     typescript: 5.1.3
   languageName: unknown
@@ -3250,6 +3251,13 @@ __metadata:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
+  languageName: node
+  linkType: hard
+
+"react-multi-carousel@npm:^2.8.4":
+  version: 2.8.4
+  resolution: "react-multi-carousel@npm:2.8.4"
+  checksum: ed4d95630f2a6c144f630874cc445e94678a9cfa4f1a2ebffe15b4f8317d3210f5141b64646f5b64689c18d11ebaeed008190ae864d7ee55193f12a9f1857542
   languageName: node
   linkType: hard
 
