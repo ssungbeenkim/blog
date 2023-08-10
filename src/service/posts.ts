@@ -10,7 +10,11 @@ export type Post = {
   featured: boolean;
 };
 
-export type PostData = Post & { content: string };
+export type PostData = Post & {
+  content: string;
+  next: Post | null;
+  prev: Post | null;
+};
 
 export async function getFeaturedPosts(): Promise<Post[]> {
   return getAllPosts() //
@@ -31,11 +35,13 @@ export async function getAllPosts(): Promise<Post[]> {
 
 export async function getPostData(fileName: string): Promise<PostData> {
   const filePath = path.join(process.cwd(), 'data', 'posts', `${fileName}.md`);
-  const metadata = await getAllPosts().then((posts) =>
-    posts.find((post) => post.path === fileName)
-  );
-  if (!metadata) throw new Error('Post not found');
-
+  const posts = await getAllPosts();
+  const post = posts.find((post) => post.path === fileName);
+  if (!post) throw new Error('Post not found');
   const content = await readFile(filePath, 'utf-8');
-  return { ...metadata, content };
+  const index = posts.indexOf(post);
+  const next = index > 0 ? posts[index - 1] : null;
+  const prev = index < posts.length - 1 ? posts[index + 1] : null;
+
+  return { ...post, content, next, prev };
 }
