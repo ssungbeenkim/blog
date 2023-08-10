@@ -1,5 +1,6 @@
 import MarkdownViewer from '@/conponents/MarkdownViewer';
 import { getPostData } from '@/service/posts';
+import Image from 'next/image';
 
 type Props = {
   params: {
@@ -7,11 +8,19 @@ type Props = {
   };
 };
 export default async function Page({ params: { slug } }: Props) {
-  const post = await getPostData(slug);
+  const { title, description, date, path, content } = await getPostData(slug);
   return (
-    <>
-      <h1>{post.title}</h1>
-      <MarkdownViewer content={post.content} />
-    </>
+    <article>
+      <Image
+        src={`/image/posts/${path}.png`}
+        alt={title}
+        width={760}
+        height={420}
+      />
+      <section>
+        <h1>{title}</h1>
+        <MarkdownViewer content={content} />
+      </section>
+    </article>
   );
 }
