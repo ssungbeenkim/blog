@@ -1,5 +1,5 @@
 'use client';
-import { ChangeEvent, FormEventHandler, useState } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 import Banner, { BannerData } from './Banner';
 
 type Form = {
@@ -23,9 +23,9 @@ export default function ContactForm() {
     e.preventDefault();
     console.log(form);
     setBanner({ message: 'Success', state: 'success' });
-    /* setTimeout(() => {
+    setTimeout(() => {
       setBanner(null);
-    }, 3000); */
+    }, 3000);
   };
   return (
     <section className='w-full max-w-md'>
