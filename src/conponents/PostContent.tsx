@@ -5,7 +5,7 @@ import { BsFillCalendarDateFill } from 'react-icons/bs';
 export default function PostContent({ post }: { post: PostData }) {
   const { title, description, date, content } = post;
   return (
-    <section className='flex flex-col'>
+    <section className='flex flex-col py-3'>
       <div className='flex items-center self-end text-gray-500'>
         <BsFillCalendarDateFill />
         <p className='ml-2 font-semibold'>{date.toString()}</p>

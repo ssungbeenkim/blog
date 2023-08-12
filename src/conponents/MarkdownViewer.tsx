@@ -31,7 +31,7 @@ export default function MarkdownViewer({ content }: { content: string }) {
           },
           img: (image) => (
             <Image
-              className='max-h-60 w-full object-cover'
+              className='max-h-100 w-full object-cover'
               src={image.src || ''}
               alt={image.alt || ''}
               width={500}
