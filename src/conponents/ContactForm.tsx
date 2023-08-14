@@ -24,7 +24,7 @@ export default function ContactForm() {
   };
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    sendContactEmail(form) //
+    sendContactEmail(form) // TODO: loading spinner
       .then(() => {
         setBanner({ message: 'Successfully Sended!', state: 'success' });
         setForm(DEFAULT_DATA);

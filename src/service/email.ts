@@ -22,7 +22,7 @@ export async function sendEmail({ subject, from, message }: EmailData) {
     subject: `[BLOG] ${subject}`,
     from,
     html: `
-    h1>${subject}</h1>
+    <h1>${subject}</h1>
     <div>${message}</div>
     <br/>
     <p>From: ${from}</p>
