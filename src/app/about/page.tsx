@@ -1,11 +1,11 @@
-import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
-
 import Hero from '@/conponents/Hero';
-const LINKS = [
-  { icon: <AiFillGithub />, url: 'dlskj' },
-  { icon: <AiFillLinkedin />, url: 'dlskj' },
-  { icon: <AiFillYoutube />, url: 'dlskj' },
-];
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Me',
+  description: 'About Me and My Career',
+};
+
 const TITLE_CLASS = 'texxt-2xl my-2 font-bold text-gray-800';
 export default function AboutPage() {
   return (

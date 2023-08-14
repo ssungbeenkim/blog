@@ -8,7 +8,18 @@ type Props = {
     slug: string;
   };
 };
-export default async function Page({ params: { slug } }: Props) {
+
+export async function generateMetadata({
+  params: { slug },
+}: Props): Promise<Metadata> {
+  const { title, description } = await getPostData(slug);
+  return {
+    title,
+    description,
+  };
+}
+
+export default async function PostPage({ params: { slug } }: Props) {
   const post = await getPostData(slug);
   const { title, path, next, prev } = post;
   return (

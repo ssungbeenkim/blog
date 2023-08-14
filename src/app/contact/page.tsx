@@ -1,16 +1,23 @@
 import ContactForm from '@/conponents/ContactForm';
+import { Metadata } from 'next';
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
+
+export const metadata: Metadata = {
+  title: 'Contact Me',
+  description: 'Send mail to me',
+};
+
 const LINKS = [
-  { icon: <AiFillGithub />, url: 'https://youtube.com' },
-  { icon: <AiFillLinkedin />, url: 'https://youtube.com' },
-  { icon: <AiFillYoutube />, url: 'https://youtube.com' },
+  { icon: <AiFillGithub />, url: 'https://github.com/wandakim' },
+  { icon: <AiFillLinkedin />, url: 'https://github.com/wandakim' },
+  { icon: <AiFillYoutube />, url: 'https://github.com/wandakim' },
 ];
 
 export default function ContactPage() {
   return (
     <section className='flex flex-col items-center'>
       <h2 className='my-2 text-3xl font-bold'>Contact Me</h2>
-      <p>changerlemondeg@gmail.com</p>
+      <p>sungbinissungbin@gmail.com</p>
       <ul className='my-2 flex gap-4'>
         {LINKS.map((link, index) => (
           <a
