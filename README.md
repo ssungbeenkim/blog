@@ -1,38 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blog
 
-## Getting Started
+<img width="1125" alt="image" src="https://github.com/wandakim/Dwitter/assets/74309458/2fe723bf-a59e-4897-ae7f-b8cfc4953cdd">
 
-First, run the development server:
+<br/>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## 이 프로젝트는
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Next.js로 구현한 개인 블로그입니다.
+- [배포 링크(Vercel)](https://blog-henna-pi.vercel.app/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br />
+ 
+## 주요 구현사항 
+- Next v13+ 및 React v18에 새로 추가된 요소들을 적극 적용했습니다.  
+- SEO최적화와 TTV단축을 위해 기본적으로 SSG로 빌드시점에 렌더링합니다.  
+- 이메일 전송 기능은 API Route와 핸들러를 활용해 Serverless로 동작합니다. 
+- 포스팅은 서버에 md파일로 저장하며 react-markdown으로 코드 하이라이트 및 스타일링을 지원합니다.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<br />
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Built With
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  <div>
+    <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
+      <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+    <img src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white">
+     <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+    <img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+    <img src="https://img.shields.io/badge/nodemailer-30B980?style=for-the-badge&logo=nodemailer&logoColor=white">
+    <img src="https://img.shields.io/badge/yup-3930D8?style=for-the-badge&logo=yup&logoColor=white">
+  </div>
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br />
