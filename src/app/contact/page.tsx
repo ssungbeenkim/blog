@@ -8,9 +8,11 @@ export const metadata: Metadata = {
 };
 
 const LINKS = [
-  { icon: <AiFillGithub />, url: 'https://github.com/wandakim' },
-  { icon: <AiFillLinkedin />, url: 'https://github.com/wandakim' },
-  { icon: <AiFillYoutube />, url: 'https://github.com/wandakim' },
+  { icon: <AiFillGithub />, url: 'https://github.com/ssungbeenkim' },
+  {
+    icon: <AiFillLinkedin />,
+    url: 'https://www.linkedin.com/in/sungbeen-kim-60b859292/',
+  },
 ];
 
 export default function ContactPage() {

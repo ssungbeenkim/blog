@@ -1,0 +1,31 @@
+'use client';
+
+import Link from 'next/link';
+import { useState } from 'react';
+
+const menu = [
+  { title: 'HOME', path: '/' },
+  { title: 'POSTS', path: '/posts' },
+  { title: 'ABOUT', path: '/about' },
+  { title: 'CONTACT', path: '/contact' },
+];
+
+export default function NavbarMenu() {
+  const [selected, setSelected] = useState('HOME');
+  return (
+    <>
+      {menu.map(({ title, path }) => (
+        <Link
+          key={path}
+          href={path}
+          className={`font-bold transition-colors hover:text-sky-400 ${
+            title === selected && 'text-sky-600'
+          }`}
+          onClick={() => setSelected(title)}
+        >
+          {title}
+        </Link>
+      ))}
+    </>
+  );
+}

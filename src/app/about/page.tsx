@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <>
       <Hero />
-      <section className='m-8 bg-gray-100 p-8 text-center shadow-lg'>
+      {/* <section className='m-8 bg-gray-100 p-8 text-center shadow-lg'>
         <h2 className={TITLE_CLASS}>Who am I?</h2>
         <p>
           I am a software engineer with a passion for building things. I have
@@ -26,7 +26,7 @@ export default function AboutPage() {
           Next.js, React, TypeScript <br />
           Node.js, Express, MongoDB
         </p>
-      </section>
+      </section> */}
     </>
   );
 }

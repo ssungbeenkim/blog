@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ThemeButton from './ThemeButton';
+import NavbarMenu from './NavbarMenu';
 
 export default function Header() {
   return (
@@ -8,10 +9,7 @@ export default function Header() {
         <h1 className='text-3xl font-bold'>{`SUNGBEEN KIM`}</h1>
       </Link>
       <nav className='flex gap-4'>
-        <Link href='/'>home</Link>
-        <Link href='/about'>about</Link>
-        <Link href='/posts'>posts</Link>
-        <Link href='/contact'>contact</Link>
+        <NavbarMenu />
         <ThemeButton />
       </nav>
     </header>

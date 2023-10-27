@@ -5,7 +5,7 @@ import Hero from '@/conponents/Hero';
 export default function HomePage() {
   return (
     <section className='mx-auto max-w-screen-2xl'>
-      <Hero />
+      {/* <Hero />{} */}
       {/* @ts-expect-error Async Server Component */}
       <FeaturedPosts />
       {/* @ts-expect-error Async Server Component */}

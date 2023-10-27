@@ -1,11 +1,11 @@
 import './globals.css';
-import { Open_Sans } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import Header from '@/conponents/Header';
 import Footer from '@/conponents/Footer';
 import { Metadata } from 'next';
 import DarkModeContext from '@/context/DarkModeContext';
 
-const sans = Open_Sans({ subsets: ['latin'] });
+const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={sans.className}>
+    <html lang='en' className={roboto.className}>
       <DarkModeContext>
         <body className='mx-auto flex w-full max-w-screen-2xl flex-col bg-white dark:bg-black'>
           <Header />
