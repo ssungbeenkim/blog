@@ -18,7 +18,7 @@ export default function NavbarMenu() {
         <Link
           key={path}
           href={path}
-          className={`font-bold transition-colors hover:text-sky-400 ${
+          className={`text-sm font-bold transition-colors hover:text-sky-400 sm:text-base ${
             title === selected && 'text-sky-600'
           }`}
           onClick={() => setSelected(title)}

@@ -4,11 +4,11 @@ import NavbarMenu from './NavbarMenu';
 
 export default function Header() {
   return (
-    <header className='flex items-center justify-between p-4'>
+    <header className='mx-4 flex flex-col items-start justify-between pt-4 sm:flex-row'>
       <Link href='/'>
-        <h1 className='text-3xl font-bold'>{`SUNGBEEN KIM`}</h1>
+        <h1 className='text-xl font-bold sm:text-xl md:text-2xl'>{`SUNGBEEN KIM`}</h1>
       </Link>
-      <nav className='flex gap-4'>
+      <nav className='mt-2 flex justify-between gap-7 sm:mt-0'>
         <NavbarMenu />
         <ThemeButton />
       </nav>
