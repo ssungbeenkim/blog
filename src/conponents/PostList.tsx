@@ -5,7 +5,7 @@ type Props = { posts: Post[] };
 
 export default function PostsList({ posts }: Props) {
   return (
-    <ul className='flex flex-col'>
+    <ul className='flex flex-col gap-4'>
       {posts.map((post) => (
         <li key={post.path}>
           <PostListCard post={post} />

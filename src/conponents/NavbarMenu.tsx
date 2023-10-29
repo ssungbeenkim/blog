@@ -18,8 +18,8 @@ export default function NavbarMenu() {
         <Link
           key={path}
           href={path}
-          className={`text-sm font-bold transition-colors hover:text-sky-400 sm:text-base ${
-            title === selected && 'text-sky-600'
+          className={`text-sm font-bold transition-colors hover:text-blue-400 sm:text-base ${
+            title === selected && 'text-blue-500'
           }`}
           onClick={() => setSelected(title)}
         >

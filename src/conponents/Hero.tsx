@@ -4,7 +4,7 @@ import profileImage from '../../public/images/profile.png';
 
 export default function Hero() {
   return (
-    <section className='text-center'>
+    <section className='mt-9 text-center'>
       <Image
         className='mx-auto rounded-full'
         src={profileImage}
@@ -12,15 +12,15 @@ export default function Hero() {
         width={250}
         height={250}
       />
-      <h2 className='mt-2 text-3xl font-bold'>{"Hi, I'm Vincent"}</h2>
-      {/* <h3 className='text-xl font-semibold'>Softwear Engineer</h3> */}
+      <h2 className='mt-2 text-3xl font-bold'>{"Hi, I'm Sungbeen"}</h2>
+      {<h3 className='text-xl font-semibold'>Softwear Engineer</h3>}
       <p>
         Software Engineer based in S.Korea <br />
         Focusing on MERN w/ Typescript <br />
         Interested in UX﹒Testing﹒FE
       </p>
       <Link href='/contact'>
-        <button className='mt-2 rounded-xl bg-sky-500 py-1 px-4 font-bold'>
+        <button className='mt-2 rounded-xl bg-sky-500 px-4 py-1 font-bold'>
           Contact Me
         </button>
       </Link>

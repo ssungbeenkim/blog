@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang='en' className={roboto.className}>
       <DarkModeContext>
-        <body className='mx-auto flex w-full flex-col items-center bg-white dark:bg-black'>
+        <body className='mx-auto flex w-full flex-col items-center bg-neutral-50 dark:bg-neutral-800'>
           <section className='w-full max-w-screen-lg'>
             <Header />
             <main className='mx-4 grow'>{children}</main>

@@ -8,21 +8,29 @@ export default function PostCard({
 }: Props) {
   return (
     <Link href={`/posts/${path}`}>
-      <article className='overflow-hidden rounded-md shadow-md duration-300 ease-in-out hover:shadow-xl'>
+      <article className='mb-2 flex  w-full flex-col overflow-hidden rounded-md shadow-md duration-300 ease-in-out hover:shadow-xl dark:border-2 dark:border-neutral-800 dark:shadow-none dark:hover:border-blue-200/90 sm:mb-0'>
         <Image
           className='w-full'
           src={`/images/posts/${path}.png`}
           alt={title}
           width={300}
           height={200}
+          style={{ objectFit: 'cover' }}
         />
-        <div className='flex flex-col items-center p-4'>
-          <time className='self-end text-gray-400'>{date.toString()}</time>
-          <h3 className='text-lg font-bold'>{title}</h3>
-          <p className='w-full truncate text-center'>{description}</p>
-          <span className='text-s my-2 rounded-lg bg-green-100 py-0.5 px-3 dark:text-black'>
-            {category}
-          </span>
+        <div className='flex w-full flex-col justify-between p-2'>
+          <div>
+            <h3 className='truncate text-base font-bold sm:text-xl'>{title}</h3>
+            <p className='w-full truncate text-sm sm:mb-2 sm:text-base'>
+              {description}
+            </p>
+          </div>
+
+          <div className='flex flex-col'>
+            <span className='text-xs text-blue-400 sm:text-sm'>{`#${category}`}</span>
+            <time className='text-xs text-gray-400 sm:text-sm'>
+              {date.toString()}
+            </time>
+          </div>
         </div>
       </article>
     </Link>

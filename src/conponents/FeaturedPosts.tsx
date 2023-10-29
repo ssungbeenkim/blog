@@ -6,7 +6,7 @@ export default async function FeaturedPosts() {
   return (
     <section className='my-2'>
       <h2 className='mb-2 text-lg font-bold sm:mb-4 sm:text-xl'>
-        Featured Posts
+        Featured Posts 🤗
       </h2>
       <PostsList posts={posts} />
     </section>
