@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: "Sungbeen's Blog",
     template: "Sungbeen's Blog | %s",
   },
-  description: "Sofrware Engineer Sungbeen's Blog",
+  description: "Sungbeen's Blog",
   icons: {
     icon: 'favicon.ico',
   },
@@ -30,7 +30,7 @@ export default function RootLayout({
           <section className='w-full max-w-screen-lg'>
             <Header />
             <main className='mx-4 grow'>{children}</main>
-            <Footer />
+            {/* <Footer /> */}
           </section>
         </body>
       </DarkModeContext>

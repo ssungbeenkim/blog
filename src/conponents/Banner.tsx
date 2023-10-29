@@ -2,20 +2,33 @@ export type BannerData = {
   message: string;
   state: 'success' | 'error';
 };
+
 export default function Banner({
   banner: { message, state },
 }: {
   banner: BannerData;
 }) {
-  const isSuccess = state === 'success';
-  const icon = isSuccess ? '✅' : '❌';
+  const { icon, bgColor } = getBannerStyle(state);
   return (
     <p
-      className={`w-full rounded-xl p-2 text-center ${
-        isSuccess ? 'bg-green-300' : 'bg-red-300'
-      }`}
+      className={`mt-4 w-full rounded-xl p-1 text-center text-black ${bgColor}`}
     >
       {`${icon} ${message}`}
     </p>
   );
+}
+
+function getBannerStyle(state: BannerData['state']) {
+  switch (state) {
+    case 'success':
+      return {
+        icon: '🎉',
+        bgColor: 'bg-blue-300',
+      };
+    case 'error':
+      return {
+        icon: '😭',
+        bgColor: 'bg-red-300',
+      };
+  }
 }

@@ -17,13 +17,13 @@ export default function FilterablePosts({ posts, categories }: Props) {
       ? posts
       : posts.filter((post) => post.category === selected);
   return (
-    <section className='m-4 flex'>
-      <PostsGrid posts={filtered} />
+    <section className='sm:m-4 sm:flex sm:flex-row-reverse'>
       <Categories
         categories={[ALL_POSTS, ...categories]}
         selected={selected}
         onClick={setSelected}
       />
+      <PostsGrid posts={filtered} />
     </section>
   );
 }
