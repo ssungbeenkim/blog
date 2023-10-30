@@ -1,6 +1,6 @@
 ## Google Domains
 
-구글 도메인은 2023년 9월 7일에 서비스를 종료하고 Squaresapce사로 서비스를 넘겼습니다[관련기사](https://arstechnica.com/google/2023/09/google-domains-halts-registrations-as-it-waits-for-the-google-grim-reaper/#:~:text=Google%20Domains%20has%20registered%20its,the%20existing%20Google%20Domains%20functionality.).
+구글 도메인은 2023년 9월 7일에 서비스를 종료하고 Squaresapce사로 서비스를 넘겼습니다 [관련기사보기](https://arstechnica.com/google/2023/09/google-domains-halts-registrations-as-it-waits-for-the-google-grim-reaper/#:~:text=Google%20Domains%20has%20registered%20its,the%20existing%20Google%20Domains%20functionality.).
 
 ## 도메인 구매
 
