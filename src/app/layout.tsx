@@ -1,17 +1,18 @@
 import './globals.css';
-import { Open_Sans } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import Header from '@/conponents/Header';
 import Footer from '@/conponents/Footer';
 import { Metadata } from 'next';
+import DarkModeContext from '@/context/DarkModeContext';
 
-const sans = Open_Sans({ subsets: ['latin'] });
+const roboto = Roboto({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Vincent's Blog",
-    template: "Vincent's Blog | %s",
+    default: "Sungbeen's Blog",
+    template: "Sungbeen's Blog | %s",
   },
-  description: "Sofrware Engineer Vincent's Blog",
+  description: "Sungbeen's Blog",
   icons: {
     icon: 'favicon.ico',
   },
@@ -23,12 +24,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={sans.className}>
-      <body className='mx-auto flex w-full max-w-screen-2xl flex-col'>
-        <Header />
-        <main className='grow'>{children}</main>
-        <Footer />
-      </body>
+    <html lang='en' className={roboto.className}>
+      <DarkModeContext>
+        <body className='mx-auto flex w-full flex-col items-center bg-neutral-50 dark:bg-neutral-800'>
+          <section className='w-full max-w-screen-lg'>
+            <Header />
+            <main className='mx-4 grow'>{children}</main>
+            {/* <Footer /> */}
+          </section>
+        </body>
+      </DarkModeContext>
     </html>
   );
 }

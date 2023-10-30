@@ -1,6 +1,7 @@
 import ContactForm from '@/conponents/ContactForm';
 import { Metadata } from 'next';
-import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { SiKakaotalk } from 'react-icons/si';
 
 export const metadata: Metadata = {
   title: 'Contact Me',
@@ -8,30 +9,42 @@ export const metadata: Metadata = {
 };
 
 const LINKS = [
-  { icon: <AiFillGithub />, url: 'https://github.com/wandakim' },
-  { icon: <AiFillLinkedin />, url: 'https://github.com/wandakim' },
-  { icon: <AiFillYoutube />, url: 'https://github.com/wandakim' },
+  {
+    icon: <AiFillGithub />,
+    url: 'https://github.com/ssungbeenkim',
+    size: 'text-[2.7rem]',
+  },
+  {
+    icon: <AiFillLinkedin />,
+    url: 'https://www.linkedin.com/in/sungbeen-kim-60b859292/',
+    size: 'text-5xl',
+  },
+  {
+    icon: <SiKakaotalk />,
+    url: 'https://open.kakao.com/o/sXhHdkPf',
+    size: 'text-[2.4rem]',
+  },
 ];
 
 export default function ContactPage() {
   return (
-    <section className='flex flex-col items-center'>
-      <h2 className='my-2 text-3xl font-bold'>Contact Me</h2>
-      <p>sungbinissungbin@gmail.com</p>
-      <ul className='my-2 flex gap-4'>
+    <section className='mt-10 flex flex-col items-center'>
+      <h2 className='my-2 text-2xl font-bold'>Contact Me</h2>
+      <p>sungbeenissungbeen@gmail.com</p>
+      <ul className='mt-3 flex items-center gap-5'>
         {LINKS.map((link, index) => (
           <a
             key={index}
             href={link.url}
             target='_blank'
             rel='noreferrel'
-            className='text-5xl transition duration-300 ease-in-out hover:text-blue-500'
+            className={`${link.size} transition duration-300 ease-in-out hover:text-blue-500`}
           >
             {link.icon}
           </a>
         ))}
       </ul>
-      <h2 className='my-8 text-3xl font-bold'>Or Send me an email</h2>
+      <h2 className='mt-3 text-lg font-bold'>{`Or Send me an email 😀`}</h2>
       <ContactForm />
     </section>
   );

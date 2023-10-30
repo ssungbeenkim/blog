@@ -1,6 +1,6 @@
-React is a JavaScript library for building user interfaces.
-
 ## A Simple Component
+
+React is a JavaScript library for building user interfaces.
 
 React components implement a `render()` method that takes input data and returns what to display. This example uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by `render()` via `this.props`.
 
@@ -23,6 +23,7 @@ A paragraph with _emphasis_ and **strong importance**.
 > A block quote with ~strikethrough~ and a URL: https://reactjs.org.
 
 - Lists
+
 - [ ] todo
 - [x] done
 
@@ -39,6 +40,10 @@ We don’t make assumptions about the rest of your technology stack, so you can 
 React can also render on the server using Node and power mobile apps using React Native.
 
 ![React Office desk](https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
+
+![test](https://user-images.githubusercontent.com/74309458/270647322-69b50ca5-692b-42fc-981e-1feca2815843.png)
+
+![test2](https://github.com/ssungbeenkim/blog/assets/74309458/ec5087de-2b32-47a8-898f-d308f56276d8)
 
 > The most important addition in React 18 is something we hope you never have to think about: concurrency. We think this is largely true for application developers, though the story may be a bit more complicated for library maintainers.
 

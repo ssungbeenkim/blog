@@ -4,12 +4,12 @@ import Hero from '@/conponents/Hero';
 
 export default function HomePage() {
   return (
-    <>
-      <Hero />
+    <section className='mx-auto max-w-screen-2xl'>
+      {/* <Hero />{} */}
       {/* @ts-expect-error Async Server Component */}
       <FeaturedPosts />
       {/* @ts-expect-error Async Server Component */}
       <CarouselPosts />
-    </>
+    </section>
   );
 }

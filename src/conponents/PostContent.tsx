@@ -3,16 +3,19 @@ import MarkdownViewer from './MarkdownViewer';
 import { BsFillCalendarDateFill } from 'react-icons/bs';
 
 export default function PostContent({ post }: { post: PostData }) {
-  const { title, description, date, content } = post;
+  const { title, date, content } = post;
   return (
-    <section className='flex flex-col py-3'>
-      <div className='flex items-center self-end text-gray-500'>
-        <BsFillCalendarDateFill />
-        <p className='ml-2 font-semibold'>{date.toString()}</p>
+    <section className='mb-4 flex flex-col py-2 '>
+      <div className='flex justify-between'>
+        <div>
+          <h1 className='mt-3 px-1 text-xl font-bold sm:text-3xl'>{title}</h1>
+          <div className='mb-8  border-2 border-blue-500 sm:w-full'></div>
+        </div>
+        <div className='mt-3 flex text-xs text-gray-500 sm:text-sm'>
+          <BsFillCalendarDateFill />
+          <p className='ml-2 font-semibold'>{date.toString()}</p>
+        </div>
       </div>
-      <h1 className='text-4xl font-bold'>{title}</h1>
-      <p className='text-xl font-bold'>{description}</p>
-      <div className='mt-4 mb-8 w-44 border-2 border-sky-600'></div>
       <MarkdownViewer content={content} />
     </section>
   );

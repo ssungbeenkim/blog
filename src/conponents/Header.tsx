@@ -1,16 +1,16 @@
 import Link from 'next/link';
+import ThemeButton from './ThemeButton';
+import NavbarMenu from './NavbarMenu';
 
 export default function Header() {
   return (
-    <header className='flex items-center justify-between p-4'>
+    <header className='mx-4 flex flex-col items-start justify-between py-2 sm:flex-row sm:pt-4'>
       <Link href='/'>
-        <h1 className='text-3xl font-bold'>{`Vincent's Blog`}</h1>
+        <h1 className='text-xl font-bold sm:text-xl md:text-2xl'>{`성빈킴 블로그`}</h1>
       </Link>
-      <nav className='flex gap-4'>
-        <Link href='/'>home</Link>
-        <Link href='/about'>about</Link>
-        <Link href='/posts'>posts</Link>
-        <Link href='/contact'>contact</Link>
+      <nav className='mt-2 flex w-full justify-between gap-7 sm:mt-0 sm:w-fit'>
+        <NavbarMenu />
+        <ThemeButton />
       </nav>
     </header>
   );
