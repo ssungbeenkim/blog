@@ -1,6 +1,5 @@
 import AdjacentPostCard from '@/conponents/AdjacentPostCard';
 import PostContent from '@/conponents/PostContent';
-import Utterance from '@/conponents/Utterance';
 import { getAllPosts, getPostData } from '@/service/posts';
 import { Metadata } from 'next';
 import Image from 'next/image';
@@ -34,7 +33,6 @@ export default async function PostPage({ params: { slug } }: Props) {
         height={420}
       />
       <PostContent post={post} />
-      <Utterance />
       <section className='mb-4 flex overflow-hidden rounded-md shadow-md'>
         {prev && <AdjacentPostCard post={prev} type='prev' />}
         {next && <AdjacentPostCard post={next} type='next' />}
