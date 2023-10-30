@@ -1,6 +1,7 @@
 import { PostData } from '@/service/posts';
 import MarkdownViewer from './MarkdownViewer';
 import { BsFillCalendarDateFill } from 'react-icons/bs';
+import Utterance from './Utterance';
 
 export default function PostContent({ post }: { post: PostData }) {
   const { title, date, content } = post;
@@ -17,6 +18,7 @@ export default function PostContent({ post }: { post: PostData }) {
         </div>
       </div>
       <MarkdownViewer content={content} />
+      <Utterance />
     </section>
   );
 }

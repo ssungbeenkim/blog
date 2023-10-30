@@ -30,7 +30,7 @@ export default function AdjacentPostCard({
         {type === 'prev' && <FaArrowLeft className={ICON_CLASS} />}
         <div className='w-full text-center'>
           <h3 className='mx-2 text-sm font-bold sm:text-xl'>{title}</h3>
-          <p className='hidden sm:block'>{description}</p>
+          <p className='hidden truncate sm:block'>{description}</p>
         </div>
         {type === 'next' && <FaArrowRight className={ICON_CLASS} />}
       </div>
