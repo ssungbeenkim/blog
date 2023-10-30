@@ -8,7 +8,7 @@ type Props = {
   type: 'prev' | 'next';
 };
 const ICON_CLASS =
-  'm-4 text-5xl text-yellow-300 transition-all group-hover:text-6xl m-4 text-5xl text-yellow-300 transition-all group-hover:text-6xl';
+  'm-4 text-2xl sm:text-3xl transition-all m-4 transition-all group-hover:text-4xl hidden sm:block';
 
 export default function AdjacentPostCard({
   post: { path, title, description },
@@ -26,11 +26,11 @@ export default function AdjacentPostCard({
         width={150}
         height={100}
       />
-      <div className='absolute top-1/2 left-1/2 flex w-full -translate-x-1/2 -translate-y-1/2 items-center justify-around px-8 text-white'>
+      <div className='absolute left-1/2 top-1/2 flex w-full -translate-x-1/2 -translate-y-1/2 items-center justify-around px-0 text-white sm:px-8'>
         {type === 'prev' && <FaArrowLeft className={ICON_CLASS} />}
         <div className='w-full text-center'>
-          <h3 className='text-2xl font-bold'>{title}</h3>
-          <p className='font-bold'>{description}</p>
+          <h3 className='mx-2 text-sm font-bold sm:text-xl'>{title}</h3>
+          <p className='hidden sm:block'>{description}</p>
         </div>
         {type === 'next' && <FaArrowRight className={ICON_CLASS} />}
       </div>

@@ -2,14 +2,14 @@
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { materialDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Image from 'next/image';
 
 export default function MarkdownViewer({ content }: { content: string }) {
   return (
     <div>
       <ReactMarkdown
-        className='prose max-w-none lg:prose-xl'
+        className='prose-base max-w-none sm:prose-lg'
         remarkPlugins={[remarkGfm]}
         components={{
           code({ node, inline, className, children, ...props }) {
@@ -17,7 +17,7 @@ export default function MarkdownViewer({ content }: { content: string }) {
             return !inline && match ? (
               <SyntaxHighlighter
                 {...props}
-                style={materialDark}
+                style={oneDark}
                 language={match[1]}
                 PreTag='div'
               >
@@ -31,7 +31,7 @@ export default function MarkdownViewer({ content }: { content: string }) {
           },
           img: (image) => (
             <Image
-              className='max-h-100 w-full object-cover'
+              className='mx-auto my-2 rounded-md object-cover shadow-2xl sm:w-11/12'
               src={image.src || ''}
               alt={image.alt || ''}
               width={500}
