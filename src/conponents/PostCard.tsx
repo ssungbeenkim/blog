@@ -8,9 +8,9 @@ export default function PostCard({
 }: Props) {
   return (
     <Link href={`/posts/${path}`}>
-      <article className='mb-2 flex  w-full flex-col overflow-hidden rounded-md shadow-md duration-300 ease-in-out hover:shadow-xl dark:border-2 dark:border-neutral-800 dark:shadow-none dark:hover:border-blue-200/90 sm:mb-0'>
+      <article className='mb-2 flex h-full w-full flex-col overflow-hidden rounded-md shadow-md duration-300 ease-in-out hover:shadow-xl dark:border-2 dark:border-neutral-800 dark:shadow-none dark:hover:border-blue-200/90 sm:mb-0'>
         <Image
-          className='w-full'
+          className='h-full w-full'
           src={`/images/posts/${path}.png`}
           alt={title}
           width={300}

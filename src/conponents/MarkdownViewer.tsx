@@ -31,7 +31,7 @@ export default function MarkdownViewer({ content }: { content: string }) {
           },
           img: (image) => (
             <Image
-              className='mx-auto my-2 rounded-md object-cover shadow-2xl sm:w-11/12'
+              className='mx-auto my-2 rounded-md object-cover shadow-md sm:w-11/12'
               src={image.src || ''}
               alt={image.alt || ''}
               width={500}
