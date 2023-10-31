@@ -13,7 +13,7 @@
     "date": "2023-8-22",
     "category": "알고리즘",
     "path": "boj-1707",
-    "featured": true
+    "featured": false
   },
   {
     "title": "백준 4963 섬의개수 node.js",
@@ -21,7 +21,7 @@
     "date": "2023-8-21",
     "category": "알고리즘",
     "path": "boj-4963",
-    "featured": true
+    "featured": false
   },
   {
     "title": "백준 2667 단지번호 붙이기 node.js",
@@ -29,7 +29,7 @@
     "date": "2023-8-20",
     "category": "알고리즘",
     "path": "boj-2667",
-    "featured": true
+    "featured": false
   },
   {
     "title": "백준 2178 미로탐색 node.js",
@@ -53,7 +53,7 @@
     "date": "2023-8-18",
     "category": "frontend",
     "path": "next-prop",
-    "featured": true
+    "featured": false
   },
   {
     "title": "exec() 함수를 이용한 프로세스 재사용하기",
