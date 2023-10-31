@@ -17,11 +17,11 @@ export default function Hero() {
         Focusing on MERN w/ Typescript <br />
         Interested in UX﹒Testing﹒FE
       </p>
-      <Link href='/contact'>
+      {/* <Link href='/contact'>
         <button className='my-4 rounded-sm bg-blue-500 px-4 py-1 font-bold hover:bg-blue-300'>
           Contact Me
         </button>
-      </Link>
+      </Link> */}
     </section>
   );
 }
