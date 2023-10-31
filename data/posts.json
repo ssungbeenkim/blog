@@ -2,16 +2,24 @@
   {
     "title": "Next.js블로그 utterance 댓글 추가하기",
     "description": "간단한 기능을 가진 댓글 시스템을 추가해봅니다.",
-    "date": "2023-10-31",
+    "date": "2023-10-30",
     "category": "frontend",
     "path": "utterance",
+    "featured": true
+  },
+  {
+    "title": "백준 68470984 토마토 node.js",
+    "description": "백준 토마토 문제풀이",
+    "date": "2023-10-31",
+    "category": "Algorithm",
+    "path": "boj-68470984",
     "featured": true
   },
   {
     "title": "백준 1707 이분그래프 node.js",
     "description": "백준 이분그래프 문제풀이",
     "date": "2023-8-22",
-    "category": "알고리즘",
+    "category": "Algorithm",
     "path": "boj-1707",
     "featured": false
   },
@@ -19,7 +27,7 @@
     "title": "백준 4963 섬의개수 node.js",
     "description": "백준 섬의개수 문제풀이",
     "date": "2023-8-21",
-    "category": "알고리즘",
+    "category": "Algorithm",
     "path": "boj-4963",
     "featured": false
   },
@@ -27,7 +35,7 @@
     "title": "백준 2667 단지번호 붙이기 node.js",
     "description": "백준 단지번호 붙이기 문제풀이",
     "date": "2023-8-20",
-    "category": "알고리즘",
+    "category": "Algorithm",
     "path": "boj-2667",
     "featured": false
   },
@@ -35,7 +43,7 @@
     "title": "백준 2178 미로탐색 node.js",
     "description": "백준 미로탐색 문제풀이",
     "date": "2023-8-19",
-    "category": "알고리즘",
+    "category": "Algorithm",
     "path": "boj-2178",
     "featured": true
   },
@@ -67,7 +75,7 @@
     "title": "단순연결리스트 역순 뒤집기",
     "description": "단순연결리스트를 역순으로 뒤집어 봅니다.",
     "date": "2023-8-20",
-    "category": "알고리즘",
+    "category": "Algorithm",
     "path": "reverse-linkedlist",
     "featured": true
   }
