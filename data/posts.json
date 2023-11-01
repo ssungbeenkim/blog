@@ -11,7 +11,7 @@
     "title": "백준 68470984 토마토 node.js",
     "description": "백준 토마토 문제풀이",
     "date": "2023-10-31",
-    "category": "Algorithm",
+    "category": "algorithm",
     "path": "boj-7576",
     "featured": true
   },
@@ -19,7 +19,7 @@
     "title": "백준 1707 이분그래프 node.js",
     "description": "백준 이분그래프 문제풀이",
     "date": "2023-8-22",
-    "category": "Algorithm",
+    "category": "algorithm",
     "path": "boj-1707",
     "featured": false
   },
@@ -27,7 +27,7 @@
     "title": "백준 4963 섬의개수 node.js",
     "description": "백준 섬의개수 문제풀이",
     "date": "2023-8-21",
-    "category": "Algorithm",
+    "category": "algorithm",
     "path": "boj-4963",
     "featured": false
   },
@@ -35,7 +35,7 @@
     "title": "백준 2667 단지번호 붙이기 node.js",
     "description": "백준 단지번호 붙이기 문제풀이",
     "date": "2023-8-20",
-    "category": "Algorithm",
+    "category": "algorithm",
     "path": "boj-2667",
     "featured": false
   },
@@ -43,7 +43,7 @@
     "title": "백준 2178 미로탐색 node.js",
     "description": "백준 미로탐색 문제풀이",
     "date": "2023-8-19",
-    "category": "Algorithm",
+    "category": "algorithm",
     "path": "boj-2178",
     "featured": true
   },
@@ -67,7 +67,7 @@
     "title": "exec() 함수를 이용한 프로세스 재사용하기",
     "description": "운영체제에서 프로세스를 재사용하는 예시를 알아봅니다.",
     "date": "2023-8-19",
-    "category": "운영체제",
+    "category": "os",
     "path": "exec-process",
     "featured": true
   },
@@ -75,7 +75,7 @@
     "title": "단순연결리스트 역순 뒤집기",
     "description": "단순연결리스트를 역순으로 뒤집어 봅니다.",
     "date": "2023-8-20",
-    "category": "Algorithm",
+    "category": "algorithm",
     "path": "reverse-linkedlist",
     "featured": true
   }

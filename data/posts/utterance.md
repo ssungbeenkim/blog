@@ -12,9 +12,10 @@ utterance 설정 방법에 대해서는 잘 설명해주신 분의 포스트가 
 
 utterance 설정을 완료하면 위 사진과 같은 script 태그를 얻게 되는데요, Jekyll의 경우에는 이 스크립트 태그를 원하는 위치에 붙이면 잘 작동이 되는 것 같습니다.
 
-> Property 'repo' does not exist on type 'DetailedHTMLProps<InputHTMLAttributes<HTMLScriptElement>, HTMLScriptElement>'.
+Next.js 에서 동일하게 클라이언트 컴포넌트에 붙여보면 다음과 같은 타입 에러가 발생합니다.
 
-Next.js 에서 동일하게 클라이언트 컴포넌트에 붙여보면 타입 에러가 발생합니다.
+Property 'repo' does not exist on type 'DetailedHTMLProps <InputHTMLAttributes <HTMLScriptElement>, HTMLScriptElement>'.
+
 script에는 HTMLElement에서 상속받은 HTMLScriptElement의 속성들이 정의되어 있는데, 위 코드에서는 정의되지 않은 repo와 같은 속성들을 넣으려고 했기 때문에 해당 에러가 발생하는 것이었습니다.
 
 ## DOM API로 요소 생성
