@@ -8,12 +8,20 @@
     "featured": true
   },
   {
-    "title": "백준 68470984 토마토 node.js",
+    "title": "백준 7562 나이트 node.js",
+    "description": "백준 나이트 문제풀이",
+    "date": "2023-11-4",
+    "category": "algorithm",
+    "path": "boj-7562",
+    "featured": true
+  },
+  {
+    "title": "백준 7576 토마토 node.js",
     "description": "백준 토마토 문제풀이",
     "date": "2023-10-31",
     "category": "algorithm",
     "path": "boj-7576",
-    "featured": true
+    "featured": false
   },
   {
     "title": "백준 1707 이분그래프 node.js",
@@ -77,6 +85,6 @@
     "date": "2023-8-20",
     "category": "algorithm",
     "path": "reverse-linkedlist",
-    "featured": true
+    "featured": false
   }
 ]
