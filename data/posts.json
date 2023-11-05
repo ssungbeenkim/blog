@@ -8,12 +8,20 @@
     "featured": true
   },
   {
+    "title": "백준 16929 Two Dots node.js",
+    "description": "백준 Two Dots 문제풀이",
+    "date": "2023-11-5",
+    "category": "algorithm",
+    "path": "boj-16929",
+    "featured": true
+  },
+  {
     "title": "백준 7562 나이트 node.js",
     "description": "백준 나이트 문제풀이",
     "date": "2023-11-4",
     "category": "algorithm",
     "path": "boj-7562",
-    "featured": true
+    "featured": false
   },
   {
     "title": "백준 7576 토마토 node.js",
