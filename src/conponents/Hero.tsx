@@ -15,7 +15,7 @@ export default function Hero() {
       <p>
         Software Engineer based in S.Korea <br />
         Focusing on MERN w/ Typescript <br />
-        Interested in UX﹒Testing﹒FE
+        Interested in UX﹒FE
       </p>
       {/* <Link href='/contact'>
         <button className='my-4 rounded-sm bg-blue-500 px-4 py-1 font-bold hover:bg-blue-300'>
