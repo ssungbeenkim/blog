@@ -8,12 +8,20 @@
     "featured": true
   },
   {
+    "title": "백준 16947 서울지하철 2호선 node.js",
+    "description": "백준 서울지하철 2호선 문제풀이",
+    "date": "2023-11-7",
+    "category": "algorithm",
+    "path": "boj-16947",
+    "featured": true
+  },
+  {
     "title": "백준 16929 Two Dots node.js",
     "description": "백준 Two Dots 문제풀이",
     "date": "2023-11-5",
     "category": "algorithm",
     "path": "boj-16929",
-    "featured": true
+    "featured": false
   },
   {
     "title": "백준 7562 나이트 node.js",
