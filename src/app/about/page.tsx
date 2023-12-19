@@ -12,7 +12,6 @@ export default function AboutPage() {
     <section className='flex flex-col items-center justify-center'>
       <Hero />
       <div className='mt-8 flex flex-col items-center'>
-        <p className='bold text-xl'>현재 구직중입니다!</p>
         <a
           href='https://sungbeenkim-resume.vercel.app/'
           target='_blank'
