@@ -12,14 +12,14 @@ export default function AboutPage() {
     <section className='flex flex-col items-center justify-center'>
       <Hero />
       <div className='mt-8 flex flex-col items-center'>
-        <a
+        {/* <a
           href='https://sungbeenkim-resume.vercel.app/'
           target='_blank'
           rel='noreferrel'
           className='bold mt-8 rounded-md bg-slate-500 p-2 text-lg text-white transition duration-300 ease-in-out hover:bg-neutral-700'
         >
           이력서 보러가기 📄
-        </a>
+        </a> */}
       </div>
       {/* <section className='m-8 bg-gray-100 p-8 text-center shadow-lg dark:bg-gray-400 dark:text-black'>
         <h2 className={TITLE_CLASS}>Who am I?</h2>
